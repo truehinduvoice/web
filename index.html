@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - The True Hindu Voice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="top_menu">
+        <img src="images/logo_h.png" alt="Logo">
+        <a class="menu_option" href="javascript:void(0);" onclick="openMenu()">=</a>
+        <nav id="menu">
+            <ul>
+                <li><a class="close_menu" href="javascript:void(0);" onclick="openMenu()">X</a></li>
+                <li><a href=""><b>HOME</b></a></li>
+                <li><a href="posts.html">POSTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="header">
+        <header class="head">
+            <h1>TRUTH And UNITY</h1>
+
+            <div class="buttons">
+                <button class="btn_join_comm" id="btnJoinComm" href="javascript:void(0);"
+                onclick="joinComm()"
+                >Join The Community</button>
+
+                <button class="btn_sign_in" id="btnSignIn" href="javascript:void(0);"
+                onclick="signIn()"
+                >Sign In</button>
+            </div>
+
+        </header>
+    </section>
+    
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        function openMenu() {
+            let menu = document.getElementById("menu"); // Corrected variable name
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "block"; // Use "block" for better semantics
+            } else {
+                menu.style.display = "none";
+            }
+        }
+        
+
+        function joinComm(){
+            let btn = document.getElementById("btnJoinComm"); 
+            btn.style.backgroundColor = "rgba(0,0,0,0)"
+            btn.style.color ="white"
+        }
+        function signIn(){
+            let btn = document.getElementById("btnSignIn"); 
+            btn.style.backgroundColor = "white"
+            btn.style.color ="rgba(0,0,0)"
+
+        }
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $('.head').css("opacity", 1- $(window).scrollTop()/150)
+            })
+        })
+
+    </script>
+    
+
+    <section class="intro">
+        <div>
+            
+        </div>
+
+    </section>
+
+    
+    <footer>
+        <div class="info">
+            <p><img src="images/ic_location.png" alt=""
+                style="height: 18px;"
+                >Maharashtra, India</p>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="https://x.com/TrueHinduVoice">
+                        <img src="images/ic_twitter.png" alt="">
+                    </a></li>
+    
+                <li><a href="https://instagram.com/truehinduvoice">
+                        <img src="images/ic_insta.png" alt="">
+                    </a></li>
+                    
+                <li><a href="thetruehinduvoice@gmail.com">
+                        <img src="images/ic_gmail.png" alt="">
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
