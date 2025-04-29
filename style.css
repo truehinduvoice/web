@@ -113,16 +113,21 @@ body{
 
 .intro{
     background-color: black;
-    height: 100vh;
+    height: auto;
 }
 .intro div{
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
 
 }
+.intro h2{
+    color: white;
+    margin-bottom: 10px;
+}
 .intro p {
+    color: white;
     font-size: 20px;
 }
 
@@ -246,3 +251,158 @@ footer .links img{
     font-size: 50px;
 }
 
+/* Article container */
+.article {
+    max-width: 800px;
+    margin: 60px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #ffffffc0;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Article title */
+  .article-title {
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Each section */
+  .article-section {
+    margin-bottom: 2rem;
+  }
+  
+  .article-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #34495e;
+  }
+  
+  .article-section h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #4a4a4a;
+  }
+  
+  /* Paragraphs */
+  .article-section p {
+    line-height: 1.7;
+    margin: 0.8rem 0;
+    color: #555;
+  }
+  
+  /* Lists inside article */
+  .article-section ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    color: #555;
+  }
+  
+  .article-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Blockquotes for invocations */
+  .article-section blockquote {
+    margin: 1rem 0;
+    padding: 0.8rem 1.2rem;
+    background: #f0f8fb8a;
+    border-left: 4px solid #3498db;
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* References Section */
+.references {
+    background: #f0f8fb8a;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-top: 2px solid #dddddd;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .references h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .reference-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .reference-list li {
+    margin-bottom: 0.6rem;
+  }
+  
+  .reference-list a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .reference-list a:hover {
+    text-decoration: underline;
+  }
+
+
+  
+/* POSTS LIST & CARD */
+.posts_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive fixed width */
+    gap: 2rem; /* Common vertical and horizontal spacing */
+    justify-content: center;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .post-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px; /* Fixed max width */
+    margin: auto; /* Center each card */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .post-card__title {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+  }
+  
+  .post-card__excerpt {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.25rem;
+  }
+  
+  .post-card__link {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    color: #3498db;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .post-card__link:hover {
+    border-color: #3498db;
+  }
+  
